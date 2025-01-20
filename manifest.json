@@ -1,0 +1,22 @@
+{
+  "name": "img-utils",
+  "manifest_version": 3,
+  "version": "1.0",
+  "description": "Utilities for img tag.",
+  "permissions": [
+    "contextMenus",
+    "activeTab",
+    "tabs",
+    "scripting"
+  ],
+  "host_permissions": ["<all_urls>"],
+  "action": {
+    "default_icon": {
+      "16": "images/icon16.png"
+    }
+  },
+  "background": {
+    "service_worker": "img_utils_worker.js",
+    "type": "module"
+  }
+}
