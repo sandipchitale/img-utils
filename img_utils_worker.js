@@ -28,6 +28,8 @@
                     // Inception level 1 - Browser
                     // Locate <img> tag
                     let imageElement = document.querySelector("img");
+                    imageElement.style.border = `1px solid ${document.body.style.backgroundColor}`;
+                    imageElement.style.outline = `1px solid white`;
                     if (imageElement) {
                         // Transform the image based in menu item id
                         if (menuItemId === 'plus90') {
