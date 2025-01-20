@@ -1,6 +1,12 @@
-# chrome.history
+# Image utils context menu
 
-This extension uses the `chrome.contextMenus.create` API to create a context menu for image transformations.
+This extension uses the `chrome.contextMenus.create` API to create a context menu for image transformations like:
+
+- Rotate 90 degrees
+- Rotate 180 degrees
+- Rotate 270 degrees
+- Flip Vertically
+- Flip Horizontally
 
 ## Overview
 
