@@ -42,7 +42,7 @@
                             type: 'rect',
                             windowId: windowId,
                             tabId: tabId,
-                            data: imageElement.getBoundingClientRect()
+                            rect: imageElement.getBoundingClientRect()
                         })
                     }, 0);
                 },
@@ -60,7 +60,7 @@
 
             await chrome.scripting.executeScript({
                 target: {tabId: request.tabId},
-                func: async (dataUrl) => {
+                func: async (dataUrl, rect) => {
                     let response = await fetch(dataUrl);
                     let blob = await response.blob();
                     // Create a ClipboardItem with the image Blob
@@ -75,7 +75,7 @@
                         alert(`Could not copy ${clipboardItem} ${e}`);
                     }
                 },
-                args: [dataUrl]
+                args: [dataUrl, request.rect]
             });
         }
     });
