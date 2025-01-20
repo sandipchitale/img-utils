@@ -8,8 +8,6 @@ This extension uses the `chrome.contextMenus.create` API to create a context men
 - Flip Vertically
 - Flip Horizontally
 
-## Overview
-
 ## Running this extension
 
 1. Clone this repository.
