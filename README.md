@@ -1,4 +1,4 @@
-# Image utils context menu
+# Transform - Image utils context menu
 
 This extension uses the `chrome.contextMenus.create` API to create a context menu for image transformations like:
 
